@@ -1,0 +1,29 @@
+baseURL: https://how-tos.eneepo.com/
+languageCode: en-us
+contentDir: content/en
+defaultContentLanguage: en
+enableRobotsTXT: true
+enableGitInfo: true
+taxonomies:
+  tag: tags
+  category: categories
+languages:
+  en:
+    languageName: English
+    weight: 1
+    params:
+      title: Eneepo's How-Tos
+      description: A Docsy example site
+outputs:
+  section:
+    - HTML
+    - print
+    - RSS
+module:
+  proxy: direct
+  imports:
+    - path: github.com/google/docsy
+      disable: false
+  hugoVersion:
+    extended: true
+    min: 0.110.0
